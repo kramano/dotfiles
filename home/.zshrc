@@ -15,7 +15,7 @@ COMPLETION_WAITING_DOTS="true"  # red dots whilst waiting for completion.
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew brew-cask osx zsh-syntax-highlighting)
+plugins=(brew brew-cask osx zsh-syntax-highlighting colorize lein)
 
 #
 # source oh-my-zsh (in a safe way, unlike their template!)
@@ -35,7 +35,7 @@ if type rbenv > /dev/null; then eval "$(rbenv init --norehash - zsh)"; fi
 #
 # load scm_breeze to make git less painful
 #
-[ -s "$HOME/.scm_breeze/scm_breeze.sh" ]  && source "$HOME/.scm_breeze/scm_breeze.sh"
+# [ -s "$HOME/.scm_breeze/scm_breeze.sh" ]  && source "$HOME/.scm_breeze/scm_breeze.sh"
 
 #
 # load homeshick for dotfile management
