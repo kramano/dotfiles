@@ -7,7 +7,7 @@
 #   ~/.oh-my-zsh/templates/zshrc.zsh-template
 #
 export ZSH=$HOME/.oh-my-zsh     # Path to your oh-my-zsh installation
-ZSH_THEME="blinks-mroth"        # Set name of the theme to load.
+ZSH_THEME="robbyrussell"        # Set name of the theme to load.
 DISABLE_AUTO_UPDATE="true"      # Disable auto-update checks. (speed up!)
 COMPLETION_WAITING_DOTS="true"  # red dots whilst waiting for completion.
 
@@ -15,7 +15,7 @@ COMPLETION_WAITING_DOTS="true"  # red dots whilst waiting for completion.
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew brew-cask osx zsh-syntax-highlighting colorize lein)
+plugins=(brew brew-cask osx zsh-syntax-highlighting lein)
 
 #
 # source oh-my-zsh (in a safe way, unlike their template!)
@@ -35,7 +35,7 @@ if type rbenv > /dev/null; then eval "$(rbenv init --norehash - zsh)"; fi
 #
 # load scm_breeze to make git less painful
 #
-# [ -s "$HOME/.scm_breeze/scm_breeze.sh" ]  && source "$HOME/.scm_breeze/scm_breeze.sh"
+[ -s "$HOME/.scm_breeze/scm_breeze.sh" ]  && source "$HOME/.scm_breeze/scm_breeze.sh"
 
 #
 # load homeshick for dotfile management
@@ -48,3 +48,5 @@ if type rbenv > /dev/null; then eval "$(rbenv init --norehash - zsh)"; fi
 [ -s "$HOME/.shell_aliases.sh" ]          && source "$HOME/.shell_aliases.sh"
 [ -s "$HOME/.shell_environment.sh" ]      && source "$HOME/.shell_environment.sh"
 [ -s "$HOME/.shell_functions.sh" ]        && source "$HOME/.shell_functions.sh"
+
+export JAVA_HOME=$(/usr/libexec/java_home)
